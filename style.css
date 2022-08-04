@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgba(209, 209, 209, 0.904);;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.904);
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 30px 30px -15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: color 2s;
+}
+
+ul {
+    list-style: none;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+ul li {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+}
+
+#red {
+    background-color: rgb(199, 13, 13);
+}
+#green {
+    background-color: rgb(88, 204, 42);
+}
+#yellow {
+    background-color: rgb(223, 226, 50);
+}
+#blue {
+    background-color: rgb(6, 168, 133);
+}
+#purple {
+    background-color: rgb(120, 0, 145);
+}
+
+body.red {
+    background-color: rgb(199, 13, 13);
+    color: rgb(199, 13, 13);;
+}
+body.green {
+    background-color: rgb(88, 204, 42);
+    color: rgb(88, 204, 42);
+}
+body.yellow {
+    background-color: rgb(223, 226, 50);
+    color: rgb(223, 226, 50);
+}
+body.blue {
+    background-color: rgb(6, 168, 133);
+    color: rgb(6, 168, 133);
+}
+body.purple {
+    background-color: rgb(120, 0, 145);
+    color: rgb(120, 0, 145);
+}
